@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+  <div class="image-gallery">
+    <h1>Image gallery</h1>
+    <div class="buttons_and_inputs">
+      <input type="text" placeholder="Title" id="imgTitle">
+      <input type="text" placeholder="Photographer" id="photographer">
+      <input type="file" id="file">
+      <button id="upload">Upload a new image</button>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <span>
+              <strong>Beszélgetés</strong> by Béla <br>
+              2022-10-25
+            </span>
+          </div>
+          <img src="./img/duplo.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <span>
+              <strong>Mikulás-túra</strong> by Béla <br>
+              2022-10-25
+            </span>
+          </div>
+          <img src="./img/mikulas.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <span>
+              <strong>Emlékek</strong> by Anita <br>
+              2022-10-25
+            </span>
+          </div>
+          <img src="./img/nap.jpg" alt="">
+        </div>
+      
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+
+
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/f5971a2274.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
